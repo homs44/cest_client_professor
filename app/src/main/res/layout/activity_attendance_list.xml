@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="kr.devy.cest.client.AttendanceListActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/attendance_tv_title"
+            android:text="출결관리" android:layout_width="wrap_content"
+            android:textColor="#757575"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/attendance_tv_name"
+            android:layout_below="@+id/attendance_tv_title"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="물리전자"
+            android:textColor="#009688"
+            />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/attendance_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        ></android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
